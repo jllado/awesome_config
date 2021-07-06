@@ -33,7 +33,10 @@ local debian = require("debian.menu")
 local has_fdo, freedesktop = pcall(require, "freedesktop")
 local markup = lain.util.markup
 local bar_spr   = wibox.widget.textbox(markup.font("Terminus 3", " ") .. markup.fontfg("Terminus 10.5", "#777777", "|") .. markup.font("Terminus 5", " "))
+-- Notifications customization
 naughty.config.defaults.position = "top_middle"
+naughty.config.defaults.bg= "#a63830"
+naughty.config.defaults.fg= "#000000"
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
 -- another config (This code will only ever execute for the fallback config)
