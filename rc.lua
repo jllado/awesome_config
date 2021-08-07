@@ -648,4 +648,5 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 awful.util.spawn("nitrogen --restore")
 awful.util.spawn("picom")
 awful.util.spawn("nm-applet")
+awful.util.spawn("xfce4-power-manager")
 awful.util.spawn("xautolock -time 3 -locker \"xtrlock -b\" -notify 30 -notifier \"notify-send -u critical -t 10000 -- 'LOCKING screen in 30 seconds'\" -killtime 60 -killer \"systemctl suspend\" -detectsleep")
